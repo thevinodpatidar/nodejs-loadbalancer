@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon index.js",
     "pm2-start": "pm2 start ecosystem.config.js",
-    "loadtest": "loadtest -n 10000 -c 1000 --rps 2000 http://localhost:4000/jph/posts"
+    "loadtest": "loadtest -n 10000 -c 1000 --rps 2000 http://localhost:4000?number=23"
   },
   "keywords": [],
   "author": "",
