@@ -1,4 +1,4 @@
-# **Basic Nodejs Cluster Example**
+# **PM2 Worker RabbitMQ Example**
 
 ## **Dependencies**
 - Nodejs
