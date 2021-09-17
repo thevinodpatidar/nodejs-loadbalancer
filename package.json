@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js",
-    "loadtest": "loadtest -n 10000 -c 1000 --rps 2000 http://localhost:4000?number=21"
+    "pm2-start" : "pm2 start ecosystem.config.js",
+    "loadtest": "loadtest -n 10000 -c 1000 --rps 2000 http://localhost:4000?number=20"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "amqplib": "^0.8.0",
     "express": "^4.17.1",
     "loadtest": "^5.1.2"
   }

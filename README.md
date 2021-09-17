@@ -1,19 +1,28 @@
-# Basic Nodejs Cluster Example
+# **Basic Nodejs Cluster Example**
 
-## Dependencies
+## **Dependencies**
 - Nodejs
 - Express
 - Loadtest
 - Nodemon
+- RabbitMQ (amqplib)
+- PM2
 
-## Start Project
+## **Pre-requisite**
+### Install RabbitMQ server
+[Install RabbitMQ](https://www.rabbitmq.com/download.html)
+### Install PM2 nodejs package globally
+```
+npm install pm2 -g
+```
+## **Start Project**
 ### 1. Install Dependencies
 ```
 yarn
 ```
 ### 2. Run Project
 ```
-yarn start
+yarn pm2-start
 ```
 ### 3. Load test using (loadtest library)
 ```
