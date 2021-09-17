@@ -1,4 +1,4 @@
-# Basic Nodejs Cluster Example
+# Basic Worker Example
 
 ## Dependencies
 - Nodejs
