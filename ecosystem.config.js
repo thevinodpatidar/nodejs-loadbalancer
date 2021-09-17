@@ -1,23 +1,17 @@
 module.exports = {
-  apps: [
-    {
-      name: 'Express App',
-      script: 'index.js',
-      instances: 6,
-      autorestart: true,
-      exec_mode: "cluster",
-      watch: true,
-      max_memory_restart: '1G'
+  apps : [{
+    name: 'EXPRESS REST API',
+    script: 'index.js',
+    instances: 'MAX',
+    autorestart: true,
+    exec_mode:"cluster",
+    watch: true,
+    max_memory_restart: '1G',
+    env: {
+      NODE_ENV: 'development'
     },
-    {
-      name: 'Worker1',
-      script: 'workers/fab-series-worker1.js',
-      instances: 1
-    },
-    {
-      name: 'Worker2',
-      script: 'workers/fab-series-worker2.js',
-      instances: 1
+    env_production: {
+      NODE_ENV: 'production'
     }
-  ]
+  }]
 };

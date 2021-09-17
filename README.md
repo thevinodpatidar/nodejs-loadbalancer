@@ -1,16 +1,18 @@
-# **Basic Nodejs Cluster Example**
+# **PM2 Worker with Redis Basic Example**
 
 ## **Dependencies**
 - Nodejs
 - Express
 - Loadtest
 - Nodemon
-- RabbitMQ (amqplib)
 - PM2
+- Redis
 
 ## **Pre-requisite**
-### Install RabbitMQ server
-[Install RabbitMQ](https://www.rabbitmq.com/download.html)
+### Install Redis server
+[Install Redis](https://redis.io/download)
+### Start Redis Server locally 
+
 ### Install PM2 nodejs package globally
 ```
 npm install pm2 -g
